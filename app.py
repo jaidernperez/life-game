@@ -4,7 +4,7 @@ from flask_cors import cross_origin
 import application.utils.responses as responses
 from application.utils.validator_request import game_validator
 from domain.exceptions.custom_exception import CustomException
-from domain.services.game_service import GameService
+from domain.services.game_service_v2 import GameService
 
 app = Flask(__name__)
 service = GameService()
